@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap-3.3.7/css/bootstrap.min.css"
+    />
+    <script type="text/javascript" src="./assets/js/jquery-1.9.1.js"></script>
+  </head>
+
+  <body>
+    <webview
+      id="webview_1"
+      src="http://learn.jser.com/"
+      nodeintegration
+      preload="renderer.js"
+      style="width: 100%; height: 100vh"
+    ></webview>
+  </body>
+  <script src="main-process.js"></script>
+</html>

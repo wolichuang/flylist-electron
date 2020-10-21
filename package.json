@@ -1,0 +1,22 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "mac": "electron-packager . api --platform=darwin --arch=x64 --out=./mac --overwrite --app-version=1.0.0  --extra-resource=\"resource\" --ignore=\"(dist|resource|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "build": "electron-packager . api --platform=win32 --arch=ia32 --out=./dist  --overwrite --app-version=1.0.0  --icon=favicon.ico --ignore=\"(dist|resource|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\""
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron": "^5.0.5",
+    "electron-packager": "^13.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "electron-prebuilt-compile": "4.0.0"
+  }
+}

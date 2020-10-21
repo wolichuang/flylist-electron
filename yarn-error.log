@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\lichuang\database\nodejs\node_global\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\aspire\bin;C:\lichuang\program\Git\mingw64\bin;C:\lichuang\program\Git\usr\local\bin;C:\lichuang\program\Git\usr\bin;C:\lichuang\program\Git\usr\bin;C:\lichuang\program\Git\mingw64\bin;C:\lichuang\program\Git\usr\bin;C:\Users\aspire\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\lichuang\program\python3\Scripts;C:\lichuang\program\python3;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\lichuang\program\Git\cmd;C:\lichuang\program\TortoisSVN\bin;C:\lichuang\database\nodejs\node_global;C:\Users\aspire\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Java\jdk-15\bin;C:\Program Files\Java\jdk-15\jre\bin;C:\Go\bin;C:\Users\aspire\AppData\Local\Microsoft\WindowsApps;C:\Users\aspire\AppData\Local\Programs\Microsoft VS Code\bin;C:\lichuang\database\nodejs\node_global;C:\Users\aspire\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\lichuang\program\flutter\bin;C:\Users\aspire\go\bin;C:\lichuang\program\Git\usr\bin\vendor_perl;C:\lichuang\program\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\lichuang\github\flylist-electron\package.json: Unexpected token } in JSON at position 767
+      at JSON.parse (<anonymous>)
+      at C:\lichuang\database\nodejs\node_global\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\lichuang\database\nodejs\node_global\node_modules\yarn\lib\cli.js:310:30)
+      at C:\lichuang\database\nodejs\node_global\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "electron-quick-start",
+    "version": "1.0.0",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "mac": "electron-packager . '' --platform=darwin --arch=x64 --out=./mac --overwrite --app-version=1.0.0  --extra-resource=\"resource\" --ignore=\"(dist|resource|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+      "build": "electron-packager . '' --platform=win32 --arch=ia32 --out=./dist  --overwrite --app-version=1.0.0  --icon=favicon.ico --ignore=\"(dist|resource|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\""
+    },
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "dependencies": {
+      "electron": "^5.0.5",
+      "electron-packager": "^13.0.1",
+    },
+    "devDependencies": {
+      "babel-plugin-transform-async-to-generator": "^6.24.1",
+      "babel-preset-env": "^1.7.0",
+      "electron-prebuilt-compile": "4.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
